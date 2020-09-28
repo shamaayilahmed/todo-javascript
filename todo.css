@@ -3,8 +3,13 @@
 }
 body{
   background: rgb(248, 233, 233);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   font-family: 'Poppins',sans-serif;
   margin: 0;
+  color: #666;
 }
 h1{
   text-align: center;
@@ -16,17 +21,42 @@ h1{
 form {
   margin: auto;
   max-width: 100%;
-  width: 400px;
+  width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .input{
+  color: #444;
   border: none;
   outline: none;
   margin: auto;
-  width: 70%;
+  width: 100%;
   display: block;
   padding: 0.8rem 2rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .input::placeholder{
-  color: #b5b5b5;
+  color: #d5d5d5;
+}
+
+.todos{
+  margin: auto;
+  background: #fff;
+  list-style-type: none;
+}
+.todos li{
+  cursor: pointer;
+  width: 90%;
+  border-top: 1px solid #e5e5e5;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+}
+.todos li.completed{
+  color: #e5e5e5;
+  text-decoration: line-through;
+}
+
+small{
+  text-align: center;
+  margin-top: 3rem;
+  color: #9e9d9d;
 }
