@@ -1,3 +1,32 @@
 *{
   box-sizing: border-box;
 }
+body{
+  background: rgb(248, 233, 233);
+  font-family: 'Poppins',sans-serif;
+  margin: 0;
+}
+h1{
+  text-align: center;
+  color: #fff;
+  font-size: 6rem;
+  text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px rgba(223, 146, 146, 0.5),0 0 20px rgba(223, 146, 146, 0.5),0 0 25px rgba(223, 146, 146, 0.5);
+}
+
+form {
+  margin: auto;
+  max-width: 100%;
+  width: 400px;
+}
+.input{
+  border: none;
+  outline: none;
+  margin: auto;
+  width: 70%;
+  display: block;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+}
+.input::placeholder{
+  color: #b5b5b5;
+}
